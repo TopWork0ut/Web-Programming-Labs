@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 37px;
+    /* background-color: black; */
+}
+
+.header_nav ul {
+    display: flex;
+}
+
+.header_title {
+    width: 135px;
+    height: 25.83px;
+}
+.header_end {
+    display: flex;
+    align-items: center;
+}
+
+.header_nav-item {
+    font-family: 'Rubik';
+    margin-right: 40px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: 'Rubik';
+    color: #FFFFFF;
+}
+
+.header_contact{
+    /* background: #FFFFFF; */
+    /* border-radius: 4px;
+    width: 90px;  
+    height: 34px; */
+    /* font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #606B74;   */
+    border: none;     
+}
