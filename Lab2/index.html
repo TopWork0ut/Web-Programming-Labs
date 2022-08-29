@@ -10,14 +10,38 @@
     <title>EcoCabins landingspage</title>
 </head>
 <body>
+    <section class="header_menu" >
+        <div class="header_menu_inner">
+            <input id="input" type="checkbox"></input>
+            <label for="input" class="menu_img2">
+                <img src="assets/Menu.png" alt="Menu icon" id="menu_img" >
+            </label>
+            <div class="nav">
+                <div class="nav-wrapper">
+                    <nav class="nav-wrapper-menu">
+                        <a href="#">Modellen</a><br>
+                        <a href="#">Kopen</a><br>
+                        <a href="#">Huren</a><br>
+                        <a href="#">Nieuws</a>
+                    </nav>
+                    <button class="menu_header_contact">Contact</button>
+                    
+                </div>
+            </div>
+            <div>
+                <img src="assets/Logo horizontal.png" alt="EcoLabins" id="menu_logo">
+            </div>
+        </div>
+    </section> 
+
     <section class="hero">
         <div class="container">
             <header class="header">
                 <div class="header_title">
-                    <img src="assets/Logo horizontal.png" alt="EcoLabins">
+                    <img src="assets/Logo horizontal.png" alt="EcoLabins" id="header_title_logo">
                 </div>
                 <div class="header_end">
-                    <nav class="header_nav">
+                    <nav class="header_nav" id="nav_links">
                         <ul>
                             <li class="header_nav-item"><a href="">Modellen</a></li>
                             <li class="header_nav-item"><a href="">Kopen</a></li>
@@ -34,13 +58,13 @@
                 <div class="hero_left">
                     <p class="hero_left_title">Sustainable tiny houses </p>
                     <p class="hero_left_text">An ecological tiny house 
-                        is constructed from as much sustainable natural <br>    
+                        is constructed from as much sustainable natural     
                         materials as possible</p>
                 </div>
                 <div class="hero_right">
                     <div class="oval">
                         <div class="triangle">
-                            <img src="assets/Shape.png" alt="triangle">
+                            <img src="assets/Shape.png" alt="triangle" id="triangle">
                         </div>
                     </div>
                     <p class="hero_right_title">Watch the movie</p>
@@ -67,7 +91,7 @@
                 </div>
                 
                 <div class="second_right">
-                    <img src="assets/IMG.png" alt="picture" class="second_picture">
+                    <img src="assets/Boards.png" alt="picture" class="second_picture">
                 </div>
             </div>
         </div>
@@ -106,7 +130,8 @@
         <div class="container">
             <div class="fourth_inner">
                 <div class="fourth_left">
-                    <img src="assets/C0283T01.png" alt="home">
+                    <img src="assets/Building.png
+                    " alt="home" id="fourth_img">
                 </div>
                 <div class="fourth_right">
                     <div class="fourth_text_one">
@@ -157,17 +182,21 @@
         </div>
     </section>
     <footer class="footer">
-        <p class="footer_text">info@eco-cabins.com</p>
-        <div class="footer_title">
-            <img src="assets/Logo horizontal.png" alt="EcoLabins">
-        </div>
-        <div class="footer_end">
-            <nav class="footer_nav">
-                <ul>
-                    <li class="footer_nav-item"><a href="">Cookies</a></li>
-                    <li class="footer_nav-item"><a href="">Privacybeleid</a></li>
-                </ul>
-            </nav>
+        <div class="footer_container">
+            <div class="footer_inner">
+                <p class="footer_text">info@eco-cabins.com</p>
+                <div class="footer_title">
+                    <img src="assets/Logo horizontal.png" alt="EcoLabins" id="footer_logo">
+                </div>
+                <div class="footer_end">
+                    <nav class="footer_nav">
+                        <ul>
+                            <li class="footer_nav-item"><a href="">Cookies</a></li>
+                            <li class="footer_nav-item" id="privacy"><a href="">Privacybeleid</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
