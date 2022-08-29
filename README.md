@@ -25,43 +25,43 @@ Hint: for extra-large screen width, you can just fit website content inside a pr
 
 - 4K screen (3860 - 2160):
 
-![Fisrt](/home/oleg/Pictures/Screenshots/1.png)
+![Fisrt](/Lab2/assets/results/1.png)
 
-![Fisrt](/home/oleg/Pictures/Screenshots/2.png)
+![Fisrt](/Lab2/assets/results/2.png)
 
-![Fisrt](/home/oleg/Pictures/Screenshots/3.png)
+![Fisrt](/Lab2/assets/results/3.png)
 
-![Fisrt](/home/oleg/Pictures/Screenshots/4.png)
+![Fisrt](/Lab2/assets/results/4.png)
 
 
 - Casual screen :
 
 
-![Second](/home/oleg/Pictures/Screenshots/5.png)
+![Second](/Lab2/assets/results/5.png)
 
-![Second](/home/oleg/Pictures/Screenshots/6.png)
+![Second](/Lab2/assets/results/6.png)
 
-![Second](/home/oleg/Pictures/Screenshots/7.png)
+![Second](/Lab2/assets/results/7.png)
 
-![Second](/home/oleg/Pictures/Screenshots/8.png)
+![Second](/Lab2/assets/results/8.png)
 
 
 - Iphone 5s ( 320px ):
 
 
-![Third](/home/oleg/Pictures/Screenshots/9.png)
+![Third](/Lab2/assets/results/9.png)
 
-![Third](/home/oleg/Pictures/Screenshots/10.png)
+![Third](/Lab2/assets/results/10.png)
 
-![Third](/home/oleg/Pictures/Screenshots/11.png)
+![Third](/Lab2/assets/results/11.png)
 
-![Third](/home/oleg/Pictures/Screenshots/12.png)
+![Third](/Lab2/assets/results/12.png)
 
-![Third](/home/oleg/Pictures/Screenshots/13.png)
+![Third](/Lab2/assets/results/13.png)
 
 - Hamburger menu:
 
-![Third](/home/oleg/Pictures/Screenshots/14.png)
+![Third](/Lab2/assets/results/14.png)
 
  
 
