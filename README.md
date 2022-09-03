@@ -1,17 +1,71 @@
-# First Lab
+# Second Lab
 
-======
+
+### Description: 
+
+-  Improve a landing page ( Lab 1 ) following the given design (same as previous) by adding full responsiveness and some animation.
+
 
 ### Conditions:
 
-- Use of semantic tags (header, nav, ul, footer, etc.) wherever is necessary
+- The website should be partly responsive:
+Required: for 320px (iPhone 5s)  2560px (4K screens).
+Hint: for extra-large screen width, you can just fit website content inside a previously set container for the regular screen width and centre it horizontally.
   
-- All fonts, colour palette, elements sizes must strictly match the design.
+- The header should collapse to a hamburger on small screens
   
-- Pixel perfect is also not required, BUT your website should visually match the design template (i.e. If the element is horizontally centred on the design, it should look centred on the website)
+- The website must contain animations (at least 3). Can be made in any possible way, preferably with css properties (animation/transition).
+
+- Your project should be logically structured (all your CSS can’t be in just one-two files)
+
+- All of the previous work requirements must be kept.
   
-- All class names must not be meaningless (i.e. class=”myClass”) and should follow the same naming convention, preferably BEM, but you could come up with your own (just be consistent)
-  
-- Basic cross-browser support (website should look correctly on last versions of modern browsers (Chrome, Safari, Edge)
-  
-- For now, responsiveness is not required
+
+### Resutls:
+
+- 4K screen (3860 - 2160):
+
+![Fisrt](/Lab2/assets/results/1.png)
+
+![Fisrt](/Lab2/assets/results/2.png)
+
+![Fisrt](/Lab2/assets/results/3.png)
+
+![Fisrt](/Lab2/assets/results/4.png)
+
+
+- Casual screen :
+
+
+![Second](/Lab2/assets/results/5.png)
+
+![Second](/Lab2/assets/results/6.png)
+
+![Second](/Lab2/assets/results/7.png)
+
+![Second](/Lab2/assets/results/8.png)
+
+
+- Iphone 5s ( 320px ):
+
+
+![Third](/Lab2/assets/results/9.png)
+
+![Third](/Lab2/assets/results/10.png)
+
+![Third](/Lab2/assets/results/11.png)
+
+![Third](/Lab2/assets/results/12.png)
+
+![Third](/Lab2/assets/results/13.png)
+
+- Hamburger menu:
+
+![Third](/Lab2/assets/results/14.png)
+
+ 
+
+
+
+
+
