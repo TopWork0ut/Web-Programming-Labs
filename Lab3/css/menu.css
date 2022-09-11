@@ -23,9 +23,16 @@
     border-width: 1px; 
 }
 
-#add_zoo_block > div {
-    margin-left: 30px;
-    margin-bottom: 30px;
+#add_zoo_block > form, div {
+    margin-left: 6px;
+    /* margin-bottom: 30px; */
+    display: flex;
+    flex-direction: column;
+}
+#add_zoo_block_left {
+    margin-left: 50px
+}
+#add_zoo_block_left div {
     display: flex;
     flex-direction: column;
 }
@@ -45,14 +52,34 @@
 
 .row_three {
     margin-top: 54px;
+    margin-left: 0px;
+}
+
+.row_three :last-child{
+    flex-direction: row;
 }
 
 .row_three input{
     margin-bottom: 20px;
 }
 
+#cancel_button {
+    text-align: center;
+}
+
 .row_three button {
-    width: 68px;
+    width: 66px;
+    /* height: 30px; */
+    /* margin-right: 8px; */
+    text-align: center;
+    line-height: 20px;
+
+
+    /* height: 30px; */
+}
+
+.row_three :first-child {
+    margin-right: 8px;
 }
 
 #display_animals {
@@ -67,17 +94,29 @@
     display: flex;
 }
 
-.display_animals_title p{
+.display_animals_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 30px;
+    height: 76px;
+    width: 320px;
+    align-items: center;
+}
+
+/* .display_animals_title p{
     display: flex;
     align-items: center;
     height: 76px;
     margin-left: 30px;
     margin-right: 36px;
-}
+} */
 
 #display_animals_sum {
     height: 80px;
-    padding-left: 30px;
+    width: 330px;
+    margin-left: 30px;
+    /* padding-left: 30px; */
     display: flex;
     align-items: center;
 }
@@ -95,6 +134,7 @@
     overflow-y: scroll;
     padding-top: 4px;
     display: flex;
+    margin-left:30px;
     flex-direction: column;
     height: 344px;
 }
@@ -102,9 +142,15 @@
 #main div{
     height: 400px;
     width: 360px;
-    margin-left: 30px;
+    margin-left: 0px;
     display: flex;
     flex-direction: column;
+}
+
+#main div > ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 #main div > p {

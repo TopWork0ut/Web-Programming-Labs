@@ -13,18 +13,28 @@ const nameInput = document.getElementById("name_input");
 const countOfVisitors = document.getElementById("count_of_visitors_input");
 const countOfAnimals = document.getElementById("count_of_animals_input");
 
+const form = document.getElementById("add_zoo_block-left");
+
 let zooArray = [];
+let zooNames = new Set();
 let zooArrayTemp = [];
 
-function createZoo() {
-  const newZoo = {
-    name: `${nameInput.value }`,
-    countOfAnimals: `${countOfAnimals.value}`,
-    countOfVisitors: `${countOfVisitors.value}`
-  };
-  
-  addZoo(newZoo);
-}
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const newZoo = {
+        name: `${nameInput.value }`,
+        countOfAnimals: `${countOfAnimals.value}`,
+        countOfVisitors: `${countOfVisitors.value}`
+    };
+    
+    if(zooNames.has(nameInput.value)){
+        nameInput.setCustomValidity('This zoo is alredy in the list of zoos'); 
+    } else {
+        addZoo(newZoo);
+        zooNames.add(nameInput.value );
+        nameInput.setCustomValidity('');
+    }
+})
 
 function sortByCountOfVisitors() {
     main.innerHTML = '';
@@ -77,15 +87,55 @@ function updateDOM(providedZoos) {
     element.style.display = 'flex';
     element.style.flexDirection = 'column';
     providedZoos.forEach(item => {
-      element.innerHTML += `<ul style="display:flex; margin-bottom: 20px;"><li style="margin-right:60px;">${item.name}  </li> 
-      <li style="margin-right:166px;">${item.countOfVisitors} </li>  
-      <li">${item.countOfAnimals}</li></ul>`;  
-      main.appendChild(element);
+        element.innerHTML += `<ul  margin-bottom: 20px; id="ul_zoo"  ">
+                                    <li style="width:30px;" class="li_zoo">${item.name}</li> 
+                                    <li style="position: relative; left: 30px;">${item.countOfVisitors}</li>  
+                                    <li style="position: relative; left: 90px;">${item.countOfAnimals}</li>
+                                    <li style="position: relative; left: 90px;">
+                                        <img src="assets/edit-icon.png" onclick="update(this)" > </img>
+                                    </li>
+                                    <li style="position: relative; left: 30px;">
+                                        <img src="assets/delete-icon.png" onclick="remove(this)"> </img>
+                                    </li>
+                            </ul>`;  
+        main.appendChild(element);
     });
+    
 }
 
+function remove(el) {
+    var element = el;
+    const parent = element.parentElement.parentElement;
 
-addZooBtn.addEventListener('click', createZoo);
+
+    var obj = zooArray.find(item => item.name === parent.firstElementChild.textContent);
+    const indexArray = zooArray.indexOf(obj);
+    zooArray.splice(indexArray,1);
+
+    zooNames.delete(parent.firstElementChild.textContent);
+
+    
+    parent.remove();
+    nameInput.setCustomValidity('');
+
+    for(var i=0; i<zooArray.length; i++){
+        console.log(zooArray[i]);
+    }
+}
+
+function update(el){
+    var element = el;
+    const parent = element.parentElement.parentElement;
+    nameInput.value = parent.children[0].textContent;
+    countOfVisitors.value = parent.children[1].textContent;
+    console.log(parent.children[1].textContent);
+    console.log(parent.children[2].textContent);
+    countOfAnimals.value = parent.children[2].textContent;
+
+
+    remove(element);
+}
+
 sortByCountOfVisitorsButton.addEventListener('click', sortByCountOfVisitors);
 sortByCountOfAnimalsButton.addEventListener('click', sortByCountOfAnimals);
 calculateSumButton.addEventListener('click', calculateSum);
