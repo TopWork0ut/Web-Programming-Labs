@@ -30,9 +30,15 @@ form.addEventListener('submit', (e) => {
     if(zooNames.has(nameInput.value)){
         nameInput.setCustomValidity('This zoo is alredy in the list of zoos'); 
     } else {
-        addZoo(newZoo);
-        zooNames.add(nameInput.value );
-        nameInput.setCustomValidity('');
+        if(nameInput.value.trim().length === 0){}
+        else {
+            addZoo(newZoo);
+            zooNames.add(nameInput.value );
+            nameInput.setCustomValidity('');
+            nameInput.value = "";
+            countOfAnimals.value = "";
+            countOfVisitors.value = "";
+        }
     }
 })
 
@@ -91,24 +97,24 @@ function updateDOM(providedZoos) {
                                     <li style="width:30px;" class="li_zoo">${item.name}</li> 
                                     <li style="position: relative; left: 30px;">${item.countOfVisitors}</li>  
                                     <li style="position: relative; left: 90px;">${item.countOfAnimals}</li>
-                                    <li style="position: relative; left: 90px;">
+                                    <li style="position: relative; left: 80px;">
                                         <img src="assets/edit-icon.png" onclick="update(this)" > </img>
                                     </li>
-                                    <li style="position: relative; left: 30px;">
+                                    <li style="position: relative; left: 20px;">
                                         <img src="assets/delete-icon.png" onclick="remove(this)"> </img>
                                     </li>
-                            </ul>`;  
+                                </ul>`;  
         main.appendChild(element);
     });
     
 }
 
 function remove(el) {
-    var element = el;
+    let element = el;
     const parent = element.parentElement.parentElement;
 
 
-    var obj = zooArray.find(item => item.name === parent.firstElementChild.textContent);
+    let obj = zooArray.find(item => item.name === parent.firstElementChild.textContent);
     const indexArray = zooArray.indexOf(obj);
     zooArray.splice(indexArray,1);
 
@@ -124,7 +130,7 @@ function remove(el) {
 }
 
 function update(el){
-    var element = el;
+    let element = el;
     const parent = element.parentElement.parentElement;
     nameInput.value = parent.children[0].textContent;
     countOfVisitors.value = parent.children[1].textContent;

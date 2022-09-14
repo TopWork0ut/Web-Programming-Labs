@@ -14,28 +14,22 @@
                     <div class="row_one">
                         <label for="name_input">Zoo's name</label>
                         <input type="text" id="name_input"  required 
-                        oninput="this.setCustomValidity('')" value="San Diego Zoo"/>
-                        <!-- oninvalid="this.setCustomValidity('Enter Zoo\'s name here')" -->
-                        <!-- <span id="error_name"></span> -->
-                        
+                        oninput="this.setCustomValidity('')" value="San Diego Zoo"/>                       
                     </div>
                     <div class="row_one">
                         <label for="count_of_visitors_input">Count of visitors</label>
                         <input type="number" id="count_of_visitors_input" min="10" max="10000000" value="12" required 
                         oninvalid="this.setCustomValidity('Enter Zoo\'s count of visitors')" oninput="this.setCustomValidity('')"/>
-                        <!-- <span id="error_visitors"></span> -->
                     </div>
                     <div class="row_one">
                         <label for="count_of_animals_input">Count of animals</label>
                         <input type="number" id="count_of_animals_input" min="10" max="100000" value="14" required
                         oninvalid="this.setCustomValidity('Enter Zoo\'s count of animals')" oninput="this.setCustomValidity('')"/>
-                        <!-- <span id="error_animals"></span> -->
                     </div>
                     
                     <div class="row_one">
                         <button id="add-user" type="submit"> Add zoo </button>
                     </div>
-                    <!-- <il onclick="deletePost(this)"></il> -->
                 </form>
                 <div id="add_zoo_block-right">
                     <div class="row_two">
@@ -48,11 +42,11 @@
                         <button id="calculate_sum">Calculate Sum</button>
                     </div>
                     <div class="row_three">
-                        <div >
+                        <div>
                             <label for="find_by_name">Find by name</label>
                             <input type="text" id="find_by_name"></input>
                         </div>
-                        <div > 
+                        <div> 
                             <button id="find_button">Find</button>
                             <button id="cancel_button">Cancel</button>
                         </div>
@@ -75,7 +69,7 @@
                 </div>
             </div>
         </section>
-    </div>
+    </div>   
     <script src="js/index.js"></script>
 </body>
 </html>
