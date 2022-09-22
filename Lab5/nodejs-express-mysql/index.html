@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoo</title>
+    <link rel="stylesheet" href="/css/style.css"  type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <section class="menu">
+            <div id="add_zoo_block">
+                <form id="add_zoo_block-left" action="/" mehtod="GET">
+                    <div class="row_one">
+                        <label for="name_input">Zoo's name</label>
+                        <input type="text" id="name_input"  required 
+                        oninput="this.setCustomValidity('')" value="San Diego Zoo"/>                       
+                    </div>
+                    <div class="row_one">
+                        <label for="count_of_visitors_input">Count of visitors</label>
+                        <input type="number" id="count_of_visitors_input" min="10" max="10000000" value="12" required 
+                        oninvalid="this.setCustomValidity('Enter Zoo\'s count of visitors')" oninput="this.setCustomValidity('')"/>
+                    </div>
+                    <div class="row_one">
+                        <label for="count_of_animals_input">Count of animals</label>
+                        <input type="number" id="count_of_animals_input" min="10" max="100000" value="14" required
+                        oninvalid="this.setCustomValidity('Enter Zoo\'s count of animals')" oninput="this.setCustomValidity('')"/>
+                    </div>
+                    
+                    <div class="row_one">
+                        <button id="add-user" type="submit"> Add zoo </button>
+                    </div>
+                </form>
+                <div id="add_zoo_block-right">
+                    <div class="row_two">
+                        <button id="sort_by_animals">Sort by animals</button>
+                    </div>
+                    <div class="row_two">
+                        <button id="sort_by_visitors">Sort by visitors</button>
+                    </div>
+                    <div class="row_two">
+                        <button id="calculate_sum">Calculate Sum</button>
+                    </div>
+                    <div class="row_three">
+                        <div>
+                            <label for="find_by_name">
+                                <select size="1" id="label_find_by_name">  
+                                    <option>Find by name</option>
+                                    <option>Delete by name</option>
+                                    <option>Update by name</option>
+                                </select>
+                            </label>
+                            <input type="text" id="find_by_name"></input>
+                        </div>
+                        <div> 
+                            <button id="find_button">Find</button>
+                            <button id="cancel_button">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="display_animals">
+                <div class="display_animals_title">
+                    <p> Name</p>
+                    <p> Count of visitors</p>
+                    <p> Count of animals</p>
+                </div>
+                <div id="main"></div>
+                <div id="display_animals_sum">
+                    <ul id="sum_ul">
+                        <li>Visitors summary:</li> 
+                        <li>Animals summary:</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>   
+    <script src="js/index.js" type="module"></script>
+    <script src="js/api.js" type="module"></script>
+
+</body>
+</html>
