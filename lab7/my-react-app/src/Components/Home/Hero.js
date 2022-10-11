@@ -1,6 +1,5 @@
 import React from "react";
-import hotel from "../Img/Hotel-PNG.png";
-// import video from "../Img/gallery.png";
+import hotel from "../../Img/Hotel-PNG.png";
 
 export default function Hero() {
   return (
@@ -13,15 +12,7 @@ export default function Hero() {
             rent a great hotel by yourself
           </h1>
 
-          <div class="hero">
-            {/* <a href="#" class="primery">
-              Find hotel
-            </a>
-            <a href="#" class="gallery">
-              <img src={video} alt="gallery img" />
-              Watch the gallery
-            </a> */}
-          </div>
+          <div class="hero"></div>
         </div>
 
         <img src={hotel} alt="Hotel img" class="hero-img" />

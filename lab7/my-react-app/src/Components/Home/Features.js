@@ -1,5 +1,5 @@
 import React from "react";
-import reception from "../Img/reception.jpg";
+import reception from "../../Img/reception.jpg";
 
 export default function Features() {
   return (

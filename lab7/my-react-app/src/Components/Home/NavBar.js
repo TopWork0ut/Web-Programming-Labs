@@ -1,12 +1,9 @@
 import React from "react";
-import close from "../Img/close.svg";
-import menu from "../Img/menu.svg";
-import "./Catalog";
-// import { Link } from "react-router-dom";
+import close from "../../Img/close.svg";
+import menu from "../../Img/menu.svg";
+import "../Catalog/Catalog";
 
 const NavBar = (props) => {
-  // }
-  // export default function NavBar(bold) {
   return (
     <div class="nav-bar">
       <div class="container">

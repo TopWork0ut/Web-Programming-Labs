@@ -1,16 +1,19 @@
 import React from "react";
-import NavBar from "./NavBar";
-import Footer from "./Footer";
+import NavBar from "../Home/NavBar";
+import Footer from "../Home/Footer";
 
-import hotel1 from "../Img/hotel1.jpg";
-import hotel2 from "../Img/hotel2.jpg";
-import hotel3 from "../Img/hotel3.jpg";
-import hotel4 from "../Img/hotel4.jpeg";
+import Selects from "./Selects";
+import ApplyButton from "./ApplyButton";
+
+import hotel1 from "../../Img/hotel1.jpg";
+import hotel2 from "../../Img/hotel2.jpg";
+import hotel3 from "../../Img/hotel3.jpg";
+import hotel4 from "../../Img/hotel4.jpeg";
 
 const catalog_id_bold = "bold";
 const search_in_catalog = "block";
 const width_nav = "28%";
-// nav.remove_property("width");
+
 const list = [
   {
     id: "1",
@@ -75,32 +78,8 @@ const Catalog = () => {
       <div id="filters">
         <div id="container">
           <div className="filer_container">
-            <div id="selects">
-              <select name="languages" class="lang">
-                <option value="item1">Filter</option>
-                <option value="item1">Item1</option>
-                <option value="itme2">Item2</option>
-                <option value="item3">Item3</option>
-                <option value="item4">Item4</option>
-              </select>
-              <select name="languages" class="lang">
-                <option value="item1">Filter</option>
-                <option value="item1">Item1</option>
-                <option value="itme2">Item2</option>
-                <option value="item3">Item3</option>
-                <option value="item4">Item4</option>
-              </select>
-              <select name="languages" class="lang">
-                <option value="item1">Filter</option>
-                <option value="item1">Item1</option>
-                <option value="itme2">Item2</option>
-                <option value="item3">Item3</option>
-                <option value="item4">Item4</option>
-              </select>
-            </div>
-            <div id="apply">
-              <button id="apply_button">Apply</button>
-            </div>
+            <Selects />
+            <ApplyButton />
           </div>
           <RenderHotels list={list} />
         </div>

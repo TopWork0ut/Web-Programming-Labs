@@ -3,9 +3,9 @@ import "./Catalog.css";
 import "./Cart.css";
 import { Routes, Route, Navigate } from "react-router-dom";
 
-import Home from "./Components/Home";
-import Catalog from "./Components/Catalog";
-import Cart from "./Components/Cart";
+import Home from "./Components/Home/Home";
+import Catalog from "./Components/Catalog/Catalog";
+import Cart from "./Components/Cart/Cart";
 
 function App() {
   return (

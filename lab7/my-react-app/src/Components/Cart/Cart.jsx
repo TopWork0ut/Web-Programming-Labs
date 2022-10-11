@@ -1,6 +1,6 @@
 import React from "react";
-import NavBar from "./NavBar";
-import Footer from "./Footer";
+import NavBar from "../Home/NavBar";
+import Footer from "../Home/Footer";
 
 const cart_id_bold = "bold";
 

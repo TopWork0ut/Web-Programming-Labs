@@ -9,14 +9,12 @@ const home_id_bold = "bold";
 
 const Home = () => {
   return (
-    // <div>
     <div>
       <NavBar bold_home={home_id_bold} />
       <Hero />
       <Features />
       <Hotels />
       <Footer />
-      {/* // </div> */}
     </div>
   );
 };

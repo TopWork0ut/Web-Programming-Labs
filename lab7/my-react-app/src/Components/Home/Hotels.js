@@ -1,7 +1,9 @@
 import React from "react";
-import hotel1 from "../Img/hotel1.jpg";
-import hotel2 from "../Img/hotel2.jpg";
-import hotel3 from "../Img/hotel3.jpg";
+import hotel1 from "../../Img/hotel1.jpg";
+import hotel2 from "../../Img/hotel2.jpg";
+import hotel3 from "../../Img/hotel3.jpg";
+
+import ViewMoreButton from "./HomeSubComponents/ViewMoreButton";
 
 export default function People() {
   return (
@@ -39,9 +41,7 @@ export default function People() {
           </li>
         </ul>
       </div>
-      <div id="container_button">
-        <button id="view_more">View More</button>
-      </div>
+      <ViewMoreButton />
     </section>
   );
 }
