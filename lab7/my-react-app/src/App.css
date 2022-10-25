@@ -158,7 +158,8 @@ section {
   background: #2083ee42;
   text-align: center;
   padding: 2em 1em;
-  width: 80%;
+  width: 300px;
+  min-height: 400px;
   margin: 0 auto 5em auto;
   border-radius: 1em;
 }
@@ -403,6 +404,7 @@ footer hr {
     width: 1050px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
@@ -462,15 +464,21 @@ footer hr {
     border-radius: 5em;
     background-size: cover;
   }
-  .test-monials-section ul {
-    display: -webkit-box;
+  .test-monials-section img {
+    /* display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin: 0 auto;
-    width: 100%;
+    width: 100%; */
+    width: 200px;
+    height: 300px;
+    border: 5px solid #444;
+    border-radius: 5em;
+    /* margin-top: -4.5em; */
+    background-size: cover;
   }
   .test-monials-section ul li {
-    margin: 0 1.3em;
+    /* margin: 0 1.3em; */
   }
   .contact-section {
     position: relative;

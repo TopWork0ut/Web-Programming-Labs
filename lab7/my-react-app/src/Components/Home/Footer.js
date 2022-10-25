@@ -3,12 +3,12 @@ import React from "react";
 export default function Footer() {
   return (
     <footer>
-      <div class="container_footer">
-        <ul class="footer-links">
+      <div className="container_footer">
+        <ul className="footer-links">
           <li>
             <a href="#">About</a>
           </li>
-          <a class="logo-foot" href="">
+          <a className="logo-foot" href="">
             Hotel<span>Seeker</span>
           </a>
           <li>
@@ -16,7 +16,7 @@ export default function Footer() {
           </li>
         </ul>
         <hr></hr>
-        <div class="iot">
+        <div className="iot">
           <p>2022 IoT Copyright all rights reserved</p>
         </div>
       </div>

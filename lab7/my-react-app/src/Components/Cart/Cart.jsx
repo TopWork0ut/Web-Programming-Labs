@@ -8,7 +8,7 @@ const Cart = () => {
   return (
     <div>
       <NavBar bold_cart={cart_id_bold} />
-      <div class="main">
+      <div className="main">
         <h1>Cart Page</h1>
       </div>
       <Footer />
