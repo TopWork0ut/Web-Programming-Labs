@@ -12,7 +12,6 @@
 
 
 - All of the requirements for previous React.js works should be kept.
-- 
 Code style:
 Your items should be stored inside the state or context (your choice) of your page
 
@@ -20,8 +19,7 @@ For your state management use useState() inside Functional Component  instead of
 If you decided to use context, use useContext() hook instead of Context.Consumer
 
 
-- Functionality (IMPORTANT):
-- 
+- Functionality (IMPORTANT): 
 Home page: “View more” button should display more elements on the same page Tip: Elements can be just random paragraph & heading, use your imagination ;)
 Catalog page: You should be able to filter your items list, by applying different filters by item's properties (i.e size/color/type)
 Catalog page: Search by any text property option should also work
