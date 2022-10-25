@@ -3,8 +3,8 @@ import reception from "../../Img/reception.jpg";
 
 export default function Features() {
   return (
-    <section class="features-section">
-      <div class="container">
+    <section className="features-section">
+      <div className="container">
         <ul>
           <li>Big list of hotels</li>
           <li>24/7 rentint supprot</li>
