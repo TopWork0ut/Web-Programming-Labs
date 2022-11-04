@@ -39,37 +39,37 @@ export default function Selects({
     if (!value || value === "Filter by place") {
       return list;
     }
-    // let a = [];
+    let a = [];
 
-    // getHotelsByPlace(value).then((response) => {
-    //   console.log("response", response);
+    getHotelsByPlace(value).then((response) => {
+      console.log("response", response);
 
-    //   setSvt3(response);
-    //   a = response;
-    // });
-    // return svt3;
-    return [...list].filter((item) => item.place === value);
+      setSvt3(response);
+      a = response;
+    });
+    return svt3;
+    // return [...list].filter((item) => item.place === value);
   }
   function getFilteredListByStars(value) {
     if (!value || value === "Filter by stars") {
       return list;
     } else {
-      // getSortedHotels("count_of_stars", value).then((response) => {
-      //   console.log("response", response);
+      getSortedHotels("count_of_stars", value).then((response) => {
+        console.log("response", response);
 
-      //   setSvt3(response);
-      // });
-      // return svt3;
-      if (value === "asc") {
-        return [...list]
-          .sort((first, second) => first.count_of_stars - second.count_of_stars)
-          .filter((item) => item);
-      }
-      if (value === "desc") {
-        return [...list]
-          .sort((first, second) => second.count_of_stars - first.count_of_stars)
-          .filter((item) => item);
-      }
+        setSvt3(response);
+      });
+      return svt3;
+      //   if (value === "asc") {
+      //     return [...list]
+      //       .sort((first, second) => first.count_of_stars - second.count_of_stars)
+      //       .filter((item) => item);
+      //   }
+      //   if (value === "desc") {
+      //     return [...list]
+      //       .sort((first, second) => second.count_of_stars - first.count_of_stars)
+      //       .filter((item) => item);
+      //   }
     }
   }
 
@@ -77,23 +77,23 @@ export default function Selects({
     if (!value || value === "Filter by cost") {
       return list;
     } else {
-      // getSortedHotels("cost", value).then((response) => {
-      //   console.log("response", response);
+      getSortedHotels("cost", value).then((response) => {
+        console.log("response", response);
 
-      //   setSvt3(response);
-      //   // a = response;
-      // });
-      // return svt3;
-      if (value === "asc") {
-        return [...list]
-          .sort((first, second) => first.cost - second.cost)
-          .filter((item) => item);
-      }
-      if (value === "desc") {
-        return [...list]
-          .sort((first, second) => second.cost - first.cost)
-          .filter((item) => item);
-      }
+        setSvt3(response);
+        // a = response;
+      });
+      return svt3;
+      // if (value === "asc") {
+      //   return [...list]
+      //     .sort((first, second) => first.cost - second.cost)
+      //     .filter((item) => item);
+      // }
+      // if (value === "desc") {
+      //   return [...list]
+      //     .sort((first, second) => second.cost - first.cost)
+      //     .filter((item) => item);
+      // }
     }
   }
 

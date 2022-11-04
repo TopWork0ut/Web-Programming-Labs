@@ -2,6 +2,7 @@ import React from "react";
 import close from "../../Img/close.svg";
 import menu from "../../Img/menu.svg";
 import "../Catalog/Catalog";
+import { Link } from "react-router-dom";
 
 const NavBar = (props) => {
   let inputHandler = (e) => {
@@ -28,19 +29,19 @@ const NavBar = (props) => {
           />
           <ul className="primary-nav">
             <li className="current">
-              <a style={{ fontWeight: props.bold_home }} href="/">
+              <Link style={{ fontWeight: props.bold_home }} to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a style={{ fontWeight: props.bold_catalog }} href="/catalog">
+              <Link style={{ fontWeight: props.bold_catalog }} to="/catalog">
                 Catalog
-              </a>
+              </Link>
             </li>
             <li>
-              <a style={{ fontWeight: props.bold_cart }} href="/cart">
+              <Link style={{ fontWeight: props.bold_cart }} to="/cart">
                 Cart
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
