@@ -11,6 +11,7 @@ import { getAllHotels } from "../../Api";
 import { placeOtions } from "./Selects";
 import { costTypeSortingOptions } from "./Selects";
 import { starsTypeSortingOptions } from "./Selects";
+import { Link } from "react-router-dom";
 
 const catalog_id_bold = "bold";
 const search_in_catalog = "block";
@@ -36,7 +37,9 @@ function RenderHotels({ list }) {
           <cite> &mdash; {element.name}</cite>
           <br />
           <button>
-            <a href={`/Item/${element.id}`}>View more </a>
+            <Link to={`/Item/${element.id}`} style={{ textDecoration: "none" }}>
+              <p>View more</p>
+            </Link>
           </button>
           <div className="stars_div">
             {console.log("stars", element.count_of_stars)}
@@ -46,7 +49,8 @@ function RenderHotels({ list }) {
                   src={star}
                   key={i}
                   alt="stars"
-                  className="stars_images"></img>
+                  className="stars_images"
+                ></img>
               )
             )}
           </div>

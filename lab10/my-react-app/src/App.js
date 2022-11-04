@@ -3,7 +3,8 @@ import "./Catalog.css";
 import "./Cart.css";
 import "./Item.css";
 
-import { Routes, Route, Navigate } from "react-router-dom";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 
 import Home from "./Components/Home/Home";
 import Catalog from "./Components/Catalog/Catalog";

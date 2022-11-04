@@ -1,0 +1,142 @@
+.main {
+  width: 100%;
+  min-height: 608px;
+  width: 1050px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.caption_div {
+  display: flex;
+  justify-content: center;
+}
+
+.caption {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.empty_cart {
+  display: flex;
+  justify-content: center;
+}
+
+.item_carts_div {
+  /* height: 400px; */
+  /* margin-top: 10px; */
+  display: flex;
+  flex-direction: column;
+}
+
+.item_carts_div img {
+  min-width: 360px;
+  height: 194px;
+  border: 5px solid #444;
+  border-radius: 4em;
+  /* margin-top: -4.5em; */
+  margin-left: 30px;
+  background-size: cover;
+}
+
+.item_cart {
+  height: 220px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  border-radius: 1em;
+  border: 0.5px solid #444;
+  align-items: center;
+}
+
+.rightside {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.upper_details {
+  width: 80%;
+  /* margin-left: 40px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.description {
+  /* margin-left: 40px; */
+  /* width: 60%; */
+
+  display: flex;
+  width: 80%;
+  /* justify-content: space-around; */
+}
+
+.name {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.cost_div {
+  display: flex;
+  align-items: center;
+}
+
+.remove_button {
+  width: 100px;
+  border-radius: 8px;
+  height: 30px;
+  cursor: pointer;
+  border: 0.5px;
+  text-align: center;
+  border-color: #444;
+  box-shadow: inset 0 0 0 1px #444;
+  transition-property: background-color, border-color, color, box-shadow, filter;
+  transition-duration: 0.3s;
+}
+
+.remove_button p {
+  margin: 0;
+}
+
+.remove_button:hover p {
+  color: #fff;
+}
+
+.remove_button:hover {
+  background-color: #454747;
+  box-shadow: inset 0 0 0 1px #bec0c1;
+}
+
+.pre_footer_buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pre_footer_buttons button {
+  width: 160px;
+  border-radius: 8px;
+  height: 30px;
+  cursor: pointer;
+  border: 0.5px;
+  text-align: center;
+  border-color: #444;
+  box-shadow: inset 0 0 0 1px #444;
+  transition-property: background-color, border-color, color, box-shadow, filter;
+  transition-duration: 0.3s;
+}
+
+.pre_footer_buttons p {
+  margin: 0;
+}
+
+.pre_footer_buttons button:hover p {
+  color: #fff;
+}
+
+.pre_footer_buttons button:hover {
+  background-color: #454747;
+  box-shadow: inset 0 0 0 1px #bec0c1;
+}

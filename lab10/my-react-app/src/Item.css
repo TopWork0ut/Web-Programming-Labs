@@ -77,6 +77,8 @@
 
 .buttons button {
   margin-top: 230px;
+  font-size: 17px;
+  /* font-weight: bold; */
   width: 140px;
   border-radius: 8px;
   height: 35px;
@@ -95,4 +97,13 @@
 
 .buttons button:hover p {
   color: #fff;
+}
+
+.buttons button:hover link {
+  color: #fff;
+}
+
+.buttons p {
+  color: rgb(52, 49, 49);
+  margin: 0;
 }
