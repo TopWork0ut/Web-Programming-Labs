@@ -1,0 +1,91 @@
+.checkout_container {
+  min-height: 508px;
+  width: 1050px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout_container form {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.checkout_container input {
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid;
+}
+
+.input-labels {
+  margin-bottom: 100px;
+}
+
+.button_div {
+  /* height: 70px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#checkout_button {
+  /* margin-top: 28px; */
+  width: 200px;
+  height: 34px;
+  border-radius: 10px;
+  border: 1px solid;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: inset 0 0 0 1px #bec0c1;
+  transition-property: background-color, border-color, color, box-shadow, filter;
+  transition-duration: 0.3s;
+}
+
+#checkout_button:hover {
+  color: #fff;
+  background-color: #525353;
+}
+
+form p {
+  font-size: 14px;
+  color: #f74f01;
+}
+
+.pre_footer_buttons_checkout {
+  margin: 0 auto;
+  height: 100px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.pre_footer_buttons_checkout button {
+  margin-top: 12px;
+  width: 160px;
+  height: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid;
+  text-align: center;
+  box-shadow: inset 0 0 0 1px #bec0c1;
+  transition-property: background-color, border-color, color, box-shadow, filter;
+  transition-duration: 0.3s;
+}
+
+.pre_footer_buttons_checkout button:hover {
+  color: #fff;
+  background-color: #525353;
+}
+
+.pre_footer_buttons_checkout p {
+  margin: 0;
+}
+
+.pre_footer_buttons_checkout button:hover p {
+  color: #fff;
+}

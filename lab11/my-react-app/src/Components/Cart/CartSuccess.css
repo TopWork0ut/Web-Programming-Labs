@@ -1,0 +1,41 @@
+.success_container {
+  min-height: 608px;
+  width: 1050px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.success_container img {
+  width: 260px;
+  height: 260px;
+}
+
+.success_container button {
+  margin-top: 12px;
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid;
+  text-align: center;
+  box-shadow: inset 0 0 0 1px #bec0c1;
+  transition-property: background-color, border-color, color, box-shadow, filter;
+  transition-duration: 0.3s;
+}
+
+.success_container button:hover {
+  color: #fff;
+  background-color: #525353;
+}
+
+.success_container p {
+  margin: 0;
+}
+
+.success_container button:hover p {
+  color: #fff;
+}

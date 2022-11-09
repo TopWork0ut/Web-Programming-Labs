@@ -6,14 +6,10 @@ import star from "../../Img/star.png";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-// import { useParams } from "react-router-dom";
-// import { useDispatch, useSelector } from "react-redux";
 import { getHotelsById } from "../../Api";
 import Loading from "../Catalog/Loading";
 import { addHotel } from "../Cart/ReduxStore/actions";
 import { Link } from "react-router-dom";
-// import store from "../Cart/ReduxStore/store";
-// import { addHotel } from "./ReduxStore/actions";
 
 const bold_catalog = "bold";
 

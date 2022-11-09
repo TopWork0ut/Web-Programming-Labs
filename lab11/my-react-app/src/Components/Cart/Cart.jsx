@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 import CartItem from "./CartItem";
 import { Link } from "react-router-dom";
 
-const cart_id_bold = "bold";
+export const cart_id_bold = "bold";
 
 function Cart() {
   const hotelsInCart = useSelector((state) => state.hotelsInCart);
@@ -22,9 +22,6 @@ function Cart() {
           <p className="caption">Shopping Cart</p>
         </div>
 
-        {/* {cartHotels.map((hotel) => (
-          <CartItem key={hotel.id} hotel={hotel} />
-        ))} */}
         {console.log("hotelsInCart before rendering", hotelsInCart)}
         {hotelsInCart === undefined || hotelsInCart.length === 0 ? (
           <div className="empty_cart">
@@ -32,9 +29,6 @@ function Cart() {
           </div>
         ) : (
           <RenderCart hotelsInCart={hotelsInCart} />
-          // {cartHotels.map((hotel) => (
-          //   <CartItem key={hotel.id} hotel={hotel} />
-          // ))}
         )}
         <div className="pre_footer_buttons">
           <button>
@@ -43,7 +37,7 @@ function Cart() {
             </Link>
           </button>
           <button>
-            <Link to="/catalog" style={{ textDecoration: "none" }}>
+            <Link to="/cart/checkout" style={{ textDecoration: "none" }}>
               <p>Continue</p>
             </Link>
           </button>

@@ -1,16 +1,9 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-// import { useDispatch, useSelector } from "react-redux";
 import { removeHotel } from "./ReduxStore/actions";
 
 export default function CartItem({ key, hotel }) {
   const dispatch = useDispatch();
-  // const hotelsInCart = useSelector((state) => state.hotelsInCart);
-  // const hotelsInCart = useSelector((state) => {
-  //   console.log(state);
-  //   return state.hotelsInCart;
-  // });
-
   const removeHotelFromCart = () => {
     dispatch(removeHotel(hotel));
   };
