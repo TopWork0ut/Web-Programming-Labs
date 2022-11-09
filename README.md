@@ -1,6 +1,5 @@
 # The eleventh Lab
 
-
 ### Description: 
 
 -  Finish your project by creating the last of three cart pages - Checkout & Success pages.
@@ -8,11 +7,13 @@
 As a bonus, you will learn a very handy and powerful form validation library - Formik.
 
 
+
 ### Requirements:
 
 - All of the requirements for previous React.js works should be kept.
 
 - Functionality:
+
 
 Form: Your form should have at least 5 fields
 Form: Every field should have a validation rule (i.e max length / no special characters / only numbers), just required option - is not enough 
@@ -26,9 +27,6 @@ After successful form submit - the user is redirected to final page (Success pag
 Use Formik & Yup libraries or any functionality related to form validation (fields validating, error messages, form submit)
 	
 
-
-
- 
 
 
 
