@@ -1,31 +1,40 @@
-# The eleventh Lab
+
+# The Twelwth Lab
+
 
 ### Description: 
 
--  Finish your project by creating the last of three cart pages - Checkout & Success pages.
+BONUS (React.js): Sign Up & Login pages
 
-As a bonus, you will learn a very handy and powerful form validation library - Formik.
-
+-  Extra tasks for highly interested in Frontend development students. This work is more complicated than others, so stay strong - the reward is worth it ;)
 
 
 ### Requirements:
 
 - All of the requirements for previous React.js works should be kept.
 
-- Functionality:
+- From this point, only Login and Registration pages are available for everyone. All your previous pages (Home/Catalog/Cart etc.) should be available only for logged in users.
+Hint: Use ProtectedRoute Pattern:
+https://dev.to/pprathameshmore/protected-routes-in-react-js-216i
+
+- Check the value inside LocalStorage before letting the user access protected pages. If the value is invalid/empty - redirect him to the Login page.
+
+- After user successfully authorizes (via login/registration) - store his credentials (email) inside LocalStorage. For consequent login/registration pages visits just check whether the value exists in LocalStorage and if it is - redirect the user to any protected page (i.e Home page).
+
+- Sign out option just has to clear the LocalStorage value (and of course redirect to /login). This action could be made just as simple “Sign me out” Button.
+Keep the authentication process simple - there is no need to implement the backend part, only /login & /register endpoints with mocked response is enough.
 
 
-Form: Your form should have at least 5 fields
-Form: Every field should have a validation rule (i.e max length / no special characters / only numbers), just required option - is not enough 
-Form: You should have at least one field that uses RegEx and at least one field that doesn’t required string value(i.e Phone number)
-Form: In the error message you should describe all errors in all fields with clear reason (i.e Email is incorrect, First name is a required field...)
-Form: Error message should be a separate React Component
-After successful form submit - the user is redirected to final page (Success page)
 
-- Code style:
 
-Use Formik & Yup libraries or any functionality related to form validation (fields validating, error messages, form submit)
+
+
+
+
+
+
 	
+
 
 
 

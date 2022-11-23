@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import close from "../../Img/close.svg";
 import menu from "../../Img/menu.svg";
 import "../Catalog/Catalog";
 import { Link } from "react-router-dom";
+import LogOut from "./../Account/LogOut";
+import { AuthContext } from "./../../Authentification";
 
 const NavBar = (props) => {
+  const { setIsAuthentificated } = useContext(AuthContext);
   let inputHandler = (e) => {
     console.log("input");
     var lowerCase = e.target.value.toLowerCase();
@@ -29,7 +32,7 @@ const NavBar = (props) => {
           />
           <ul className="primary-nav">
             <li className="current">
-              <Link style={{ fontWeight: props.bold_home }} to="/">
+              <Link style={{ fontWeight: props.bold_home }} to="/home">
                 Home
               </Link>
             </li>
@@ -58,6 +61,7 @@ const NavBar = (props) => {
             value={props.inputMessage}
           />
         </div>
+        <LogOut />
       </div>
     </div>
   );

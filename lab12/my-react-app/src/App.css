@@ -42,14 +42,12 @@ section {
 }
 
 .nav-bar nav {
-  /* display: none; */
 }
 
 .nav-bar .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* place-content: space-between; */
   align-items: center;
 }
 
@@ -260,7 +258,6 @@ nav li a:hover {
 
 #search {
   width: 146px;
-  /* width: 100%; */
   border: 1px solid grey;
   border-radius: 10px;
   height: 20px;
@@ -463,20 +460,13 @@ footer hr {
     background-size: cover;
   }
   .test-monials-section img {
-    /* display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0 auto;
-    width: 100%; */
     width: 200px;
     height: 300px;
     border: 5px solid #444;
     border-radius: 5em;
-    /* margin-top: -4.5em; */
     background-size: cover;
   }
   .test-monials-section ul li {
-    /* margin: 0 1.3em; */
   }
   .contact-section {
     position: relative;
@@ -515,4 +505,9 @@ footer hr {
     left: 4.5;
     top: 2em;
   }
+}
+
+.logout_div img {
+  width: 20px;
+  height: 20px;
 }
