@@ -27,14 +27,12 @@
 }
 
 .button_div {
-  /* height: 70px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 #checkout_button {
-  /* margin-top: 28px; */
   width: 200px;
   height: 34px;
   border-radius: 10px;

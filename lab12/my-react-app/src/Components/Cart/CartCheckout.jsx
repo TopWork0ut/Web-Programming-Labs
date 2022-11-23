@@ -6,14 +6,8 @@ import Footer from "../Home/Footer";
 import { cart_id_bold } from "./Cart";
 import { Link } from "react-router-dom";
 import "./CartCheckout.css";
-import { useState, useEffect } from "react";
 
-export const onSubmit = (values, actions) => {
-  // console.log(values);
-  // console.log(actions);
-  // await new Promise((resolve) => setTimeout(resolve, 1000));
-  // actions.resetForm();
-};
+export const onSubmit = (values, actions) => {};
 
 function CartCheckout() {
   const {
@@ -35,14 +29,6 @@ function CartCheckout() {
     validationSchema: basicSchema,
     onSubmit,
   });
-  // function eachClick() {
-  //   if (!isSubmitting) {
-  //     alert("Please gap all data in the form!");
-  //   } else {
-
-  //   }
-  // }
-  // const [submit, setSubmit] = useState(false);
 
   const ConditionalLink = ({ children, to, condition }) =>
     !!condition && to ? (
@@ -52,14 +38,6 @@ function CartCheckout() {
     ) : (
       <>{children}</>
     );
-  // useEffect(() => {
-  //   // console.log('Count is now: ', count);
-  //   setSubmit(true);
-  // }, [submit]);
-
-  // const handleClick = (event) => {
-  //   setSubmit(true);
-  // };
 
   console.log(errors);
   return (
@@ -68,7 +46,6 @@ function CartCheckout() {
       <div className="checkout_container">
         <form onSubmit={handleSubmit} autoComplete="off">
           <div className="input-labels">
-            <label htmlFor="firstname">First Name</label>
             <input
               value={values.firstname}
               onChange={handleChange}
@@ -87,7 +64,6 @@ function CartCheckout() {
           </div>
 
           <div className="input-labels">
-            <label htmlFor="lastname">Last Name</label>
             <input
               value={values.lastname}
               onChange={handleChange}
@@ -100,7 +76,6 @@ function CartCheckout() {
           </div>
 
           <div className="input-labels">
-            <label htmlFor="email">Email</label>
             <input
               value={values.email}
               onChange={handleChange}
@@ -113,7 +88,6 @@ function CartCheckout() {
           </div>
 
           <div className="input-labels">
-            <label htmlFor="phone">Phone</label>
             <input
               value={values.phone}
               onChange={handleChange}
@@ -126,7 +100,6 @@ function CartCheckout() {
           </div>
 
           <div className="input-labels">
-            <label htmlFor="address">Address</label>
             <input
               value={values.address}
               onChange={handleChange}
@@ -150,17 +123,7 @@ function CartCheckout() {
             <p>Go Back</p>
           </Link>
         </button>
-        <div>
-          {/* {isSubmitting &
-          ( */}
-
-          {/* } */}
-        </div>
-        {/* <button> */}
-        {/* <Link to="/cart/checkout" style={{ textDecoration: "none" }}>
-            <p>Continue</p>
-          </Link> */}
-        {/* </button> */}
+        <div></div>
       </div>
       <Footer />
     </div>
